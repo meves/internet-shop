@@ -1,0 +1,16 @@
+.app-container {
+  max-width: 1366px;
+  margin: 0 auto;
+
+  
+
+  .app {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header sidebar"
+                         "content sidebar"
+                         "footer footer";
+    grid-gap: 1px;
+  }
+}
