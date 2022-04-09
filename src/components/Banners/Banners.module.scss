@@ -1,0 +1,28 @@
+.banners {
+    width: 311px;
+    height: 168px;
+    margin-top: 2.0625em;
+    border: 1px solid black;
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19.4375em;
+        height: 10.5em;
+        border-radius: 1.25em;
+        
+        .text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.15;
+            text-align: center;
+            color: var(--secondary-white);
+            width: 8.336em;
+        }
+    }
+
+    .banner:not(:first-child) {
+        margin-top: 1.25em;
+    }
+}

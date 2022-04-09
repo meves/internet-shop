@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
+import Banners from './components/Banners/Banners';
 import Cart from './components/Content/Cart/Cart';
 import Delivery from './components/Content/Delivery/Delivery';
 import Main from './components/Content/Main/Main';
@@ -20,7 +21,12 @@ function App() {
           <Route path="delivery" element={<Delivery/>}/>
           <Route path="orders" element={<Orders/>}/>
         </Routes>
-        <Sidebar/>
+        <Sidebar>
+          <Routes>
+            <Route path="/" element={<Banners/>}/>
+            <Route path="cart" element={<Banners/>}/>  
+          </Routes>  
+        </Sidebar>
         <Footer/>
       </div>
     </div>

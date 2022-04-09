@@ -8,6 +8,9 @@
   --secondary-blue: #F0F4FB;
   --secondary-very-light-grey: #F8F8F8;
   --secondary-grey: #8D8D8E;
+  --secondary-white: #fff;
+  --accent-pink: #FF2D87;
+  --accent-blue: #2967FF;
 }
 
 *, *::before, *::after {
