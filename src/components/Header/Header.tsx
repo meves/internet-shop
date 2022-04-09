@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import styles from './Header.module.scss';
-import Cart from '../../assets/cart.svg';
-import Tag from '../../assets/tag.svg';
-import Search from '../../assets/search.svg';
+import Cart from '../../assets/Header/cart.svg';
+import Tag from '../../assets/Header/tag.svg';
+import Search from '../../assets/Header/search.svg';
 
 const Header: FC = (props) => {
     return (

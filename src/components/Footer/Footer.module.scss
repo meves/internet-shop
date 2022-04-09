@@ -1,3 +1,83 @@
 .footer {
     grid-area: footer;
+    padding: 2em 7.6875em 2.1875em 3.125em;
+    background-color: var(--secondary-very-light-grey);
+
+    .otherInfo {
+        display: flex;
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.55rem;
+            line-height: 1.2255;
+            color: var(--primary-dark);
+            margin-right: 15.36765em;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: var(--primary-dark);
+            margin-bottom: 0.625em;
+        }
+
+        .socials {
+            margin-right: 1.9375em;
+
+            .icons {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .link {
+                    display: block;
+                }
+                
+                .link:not(:last-child) {
+                    margin-right: 1em;
+                }
+                .link:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .mobiles {
+
+            .logos {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .link {
+                    display: block;
+                }
+
+                .link:not(:last-child) {
+                    margin-right: 1.25em;                    
+                }
+                .link:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .legalInfo {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.22;
+        margin-top: 4.35714em;
+        color: var(--secondary-grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div:not(:last-child) {
+            margin-right: 1.428571em;
+        }
+    }
 }
