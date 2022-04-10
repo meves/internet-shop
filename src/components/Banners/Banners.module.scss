@@ -1,8 +1,5 @@
 .banners {
-    width: 311px;
-    height: 168px;
     margin-top: 2.0625em;
-    border: 1px solid black;
 
     .banner {
         display: flex;
@@ -24,5 +21,9 @@
 
     .banner:not(:first-child) {
         margin-top: 1.25em;
+    }
+
+    .banner:hover {
+        cursor: pointer;
     }
 }

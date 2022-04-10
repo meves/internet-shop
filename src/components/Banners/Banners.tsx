@@ -8,9 +8,9 @@ const images = new Array(Chocolate, River, Chocolate);
 const Banners: FC = (props) => {
     const banners = images.map((image, i) => (
         <div className={styles.banner} key={String(i)} style={{backgroundImage:`url(${image})`}}>
-            <p className={styles.text}>
+            <div className={styles.text}>
                 Новая коллекция                
-            </p>
+            </div>
         </div>
     ))
     return (

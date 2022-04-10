@@ -1,4 +1,170 @@
 .main {
-    background-color: blueviolet;
-    height: 50em;
+    padding: 1.875em 3.0625em 3.4375em 3.125em;
+    
+    background-color: var(--main-background);
+    
+    .categoryWrapper {
+
+        .titles {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 1.25em;
+
+            .categoryTitle {
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.15;
+                color: var(--primary-dark);
+                margin-right: 5.35em;
+            }
+
+            .settingsTitle {
+                font-size: 0.75rem;
+                font-weight: 600;
+                line-height: 1.2767;
+                color: var(--accent-blue);
+            }
+        }
+
+        
+
+    }
+
+    .cardsWrapper {
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 1.25em;
+            grid-template-rows: auto;
+            row-gap: 1.875em;
+
+            .card {
+
+                .cardSection {
+                    position: relative;
+                    overflow-x: hidden;
+
+                    .image {
+                        height: 9.6225em;
+                        margin: 0;
+                        background-image: url('../../../assets/Content/ryzen.png');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+
+                    .tagsBlock {
+                        position: absolute;
+                        left: 0.8em;
+                        top: 6.8em;
+                    }
+
+                    .text {
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        color: var(--primary-dark);
+                    }
+
+                    .minPrice {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        line-height: 1.3;
+                        color: var(--accent-blue);
+                        margin-top: 0.25em;
+                    }
+
+                    .discount {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .oldPrice {
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            line-height: 1.22;
+                            color: var(--secondary-grey);
+                            margin-right: 1.071428em;
+                        }
+
+                        .percent {
+                            font-size: 0.875rem;
+                            font-weight: 600;
+                            line-height: 1.4;
+                            color: var(--accent-pink);
+                        }
+                    }
+                }
+                button {
+                    font-size: 0.875em;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    color: var(--accent-blue);
+                    display: block;
+                    padding: 0.7142em 2.8571em;
+                    width: 100%;
+                    border: 1px solid var(--accent-blue);
+                    border-radius: 1.85714em;
+                    margin-top: 0.71429em;
+                }
+                button:hover {
+                    cursor: pointer;
+                    background-color: var(--secondary-very-light-grey);
+                }
+            }
+            .card:hover {
+                background-color: var(--secondary-very-light-grey);
+                cursor: pointer;
+            }
+        }
+
+        .moreBtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.875em;
+            
+            button {
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1.1875;
+                border-radius: 3.1875em;
+                padding: 1em 2.75em 1em 2.75em;
+                color: var(--primary-body);
+                background-color: var(--secondary-blue);                
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: var(--secondary-very-light-grey);
+            }
+        }
+    }
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.25em;
+    
+    .tag {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.4;
+        padding: 0.142857em 0.714286em;
+        border-radius: 2.92181em;
+        color: var(--secondary-white);
+        background-color: var(--accent-blue);
+        white-space: nowrap;
+    }
+    .tag:not(:last-child) {
+        margin-right: 0.41715em;
+    }
+    .tag:last-child {
+        border: 1px solid var(--accent-pink);
+        color: var(--primary-dark);
+    }
+    .tag:hover {
+        cursor: pointer;
+    }
 }

@@ -37,6 +37,9 @@
                 background-color: var(--accent-blue);
                 border-radius: 3.1875em;
             }
+            .button:hover {
+                cursor: pointer;
+            }
         }
     }
 }

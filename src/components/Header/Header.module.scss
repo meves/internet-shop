@@ -66,6 +66,9 @@
                 padding: 0.6875em 2.3125em;
                 margin-left: -1.3em;
             }
+            .searchButton:hover {
+                cursor: pointer;
+            }
         }   
         
         .cart {
@@ -94,6 +97,10 @@
             }
     
         }
+        .cart:hover {
+            cursor: pointer;
+        }
+
         .avatar {
             width: 3.125em;
             height: 3.125em;
@@ -101,6 +108,9 @@
             background-image: url('../../assets/Header/avatar.png');
             background-repeat: no-repeat;
             background-position: center center;
+        }
+        .avatar:hover {
+            cursor: pointer;
         }
     }
 }

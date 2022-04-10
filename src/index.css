@@ -5,12 +5,16 @@
   /** css-vars*/
   --primary-dark: #2d2d2f;
   --primary-body: #727280;
-  --secondary-blue: #F0F4FB;
+  --secondary-blue: #f0f4fb;
   --secondary-very-light-grey: #F8F8F8;
   --secondary-grey: #8D8D8E;
   --secondary-white: #fff;
   --accent-pink: #FF2D87;
   --accent-blue: #2967FF;
+  --accent-green: #58CF18;
+  --accent-yellow: #FFA601;
+  --accent-light-pink: #FF7CB4;
+  --main-background: #E5E5E5;
 }
 
 *, *::before, *::after {
@@ -20,8 +24,6 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
