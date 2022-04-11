@@ -1,3 +1,133 @@
 .delivery {
-    background-color: blue;
+    padding: 1.875em 3.125em;
+    background-color: var(--light-grey);
+    
+    .title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.15;
+        color: var(--primary-dark);
+    }
+    
+    .deliveryForm {
+        margin-top: 1em;
+        padding-bottom: 1.5em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .info {
+            margin-right: 8.6875em;
+
+            .deliveryWrapper {
+                margin-top: 0.875em;
+
+                .deliveryTime {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    color: var(--primary-dark);
+                    margin-bottom: 0.625em;
+                }
+    
+                .select {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+    
+                    div {
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        color: var(--primary-body);
+                    }
+                    div:first-child {
+                        margin-right: 1.42857em;
+                    }
+                }
+            }
+
+            .inputWrapper {
+                margin-top: 1.125em;
+
+                .title {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    color: var(--primary-dark);
+                    margin-bottom: 0.625em;
+                }
+
+                .input > input{
+                    width: 18.25em;
+                    height: 2.5em;
+                    font-size: 1rem;
+                    border: 1px solid var(--secondary-blue);
+                    border-radius: 2.8125em;
+                    outline: none;
+                    background-color: var(--secondary-white);
+                }
+            }            
+        }
+
+        .total {
+
+            .totalInfo {
+                padding: 1.25em;
+                background-color: var(--secondary-blue);
+                width: 18.25em;
+                height: 7.625em;
+
+                .info {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    &:div:last-child {
+                        margin-left: auto;
+                    }
+                }
+                .info:nth-child(2) {
+                    margin-top: 0.3125em;
+                }
+                .info:last-child {
+                    margin-top: 0.9375em;
+                }
+            }
+
+            button {
+                width: 100%;
+                margin-top: 0.625em;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1.1875;
+                color: var(--secondary-white);
+                padding: 1em 5.625em;
+                background-color: var(--accent-blue);
+                border-radius: 3.1875em;
+            }    
+            button:hover {
+                cursor: pointer;
+            }    
+        }
+    }
+}
+
+.text {
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--primary-body);
+}
+
+.bigText {
+    font-size: 1rem;
+}
+
+.boldText {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-dark);
 }
