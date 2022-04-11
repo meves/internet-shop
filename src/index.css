@@ -9,12 +9,13 @@
   --secondary-very-light-grey: #F8F8F8;
   --secondary-grey: #8D8D8E;
   --secondary-white: #fff;
+  --secondary-menu-blue: #AEC2EA;
   --accent-pink: #FF2D87;
   --accent-blue: #2967FF;
   --accent-green: #58CF18;
   --accent-yellow: #FFA601;
   --accent-light-pink: #FF7CB4;
-  --main-background: #E5E5E5;
+  --light-grey: #E5E5E5;
 }
 
 *, *::before, *::after {

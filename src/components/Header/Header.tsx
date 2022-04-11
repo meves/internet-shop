@@ -6,7 +6,7 @@ import Search from '../../assets/Header/search.svg';
 
 const Header: FC = (props) => {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <div className={styles.title}>React</div>
             <div className={styles.location}>
                 <img src={Tag} alt="tag" />
@@ -25,7 +25,7 @@ const Header: FC = (props) => {
                 </div>
                 <div className={styles.avatar}></div>                
             </div>
-        </div>
+        </header>
     )
 }
 

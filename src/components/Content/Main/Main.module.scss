@@ -1,7 +1,7 @@
 .main {
     padding: 1.875em 3.0625em 3.4375em 3.125em;
     
-    background-color: var(--main-background);
+    background-color: var(--light-grey);
     
     .categoryWrapper {
 
@@ -86,6 +86,7 @@
                             line-height: 1.22;
                             color: var(--secondary-grey);
                             margin-right: 1.071428em;
+                            text-decoration: line-through;
                         }
 
                         .percent {

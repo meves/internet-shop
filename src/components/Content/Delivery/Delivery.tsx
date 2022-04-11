@@ -3,9 +3,9 @@ import styles from './Delivery.module.scss';
 
 const Delivery: FC = (props) => {
     return (
-        <div className={styles.delivery}>
+        <main className={styles.delivery}>
             Delivery
-        </div>
+        </main>
     )
 }
 

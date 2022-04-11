@@ -3,9 +3,9 @@ import styles from './Orders.module.scss';
 
 const Orders: FC = (props) => {
     return (
-        <div className={styles.orders}>
+        <main className={styles.orders}>
             Orders
-        </div>
+        </main>
     )
 }
 

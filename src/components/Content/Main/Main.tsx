@@ -24,7 +24,7 @@ const Main: FC = (props) => {
     ));
 
     return (
-        <div className={styles.main}>
+        <main className={styles.main}>
             <div className={styles.categoryWrapper}>
                 <div className={styles.titles}>
                     <div className={styles.categoryTitle}>
@@ -74,7 +74,7 @@ const Main: FC = (props) => {
                     </button>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 
