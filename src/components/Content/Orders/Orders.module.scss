@@ -1,3 +1,132 @@
 .orders {
-    background-color: brown;
+    padding: 1.875em 3.0625em 3.0625em 2.125em;
+    min-height: 40.25em;
+    background-color: var(--light-grey);
+
+    .title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.15;
+        color: var(--primary-dark);
+        margin-bottom: 1em;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        row-gap: 1.875em;
+
+        .card {
+            max-width: 28em;
+            border: 1px solid var(--secondary-menu-blue);
+            border-radius: 2em;
+            padding: 1.25em 2.6875em 5em 1.25em;
+            background-color: var(--secondary-white);
+            position: relative;
+    
+            .arrowUp {
+                position: absolute;
+                top: 1.6875em;
+                right: 1.5em;
+            }
+            .arrowUp:hover {
+                cursor: pointer;
+            }
+    
+            .header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                margin-bottom: 0.625em;
+    
+                .xiaomi {
+                    margin-right: 0.625em;
+                }
+                
+                .name {
+                    margin-right: 0.625em;
+                    
+                    .mark {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        line-height: 1.3;
+                        color: var(--primary-dark);
+                    }
+    
+                    .date {
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        line-height: 1.4;
+                        color: var(--primary-body);
+                    }
+                }
+    
+                .detail {
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    line-height: 1.277;
+                    color: var(--accent-blue);
+                }
+                .detail:hover {
+                    cursor: pointer;
+                }
+            }
+    
+            .body {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0.625em;
+    
+                .status {
+                    margin-right: 1.25em;                
+                }
+    
+                .numberWrapper {
+                    
+                    .orderNumber {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+    
+                        .pagesImage {
+                            display: block;
+                            margin-left: 0.43em;
+                        }
+                    }
+                }
+            }
+    
+            .footer {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                white-space: nowrap;
+    
+                .goodsCount, .orderCost {
+                    margin-right: 1.25em;
+                }
+    
+                .goodsCount {
+                    width: 5.625em;
+                }
+            }
+        }
+    }
+}
+
+.cardTitle {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.22;
+    color: var(--primary-body);
+    margin-bottom: 0.25em;
+}
+
+.cardInfo {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.22;
+    color: var(--primary-dark);
 }
