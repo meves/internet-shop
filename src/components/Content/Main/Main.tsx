@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styles from './Main.module.scss';
 import Ryzen from '../../../assets/Content/ryzen.png';
+import Card from './Card';
 
 const tagsNames = [
     {name: 'Игрушка', color: 'accent-blue'},
@@ -22,7 +23,6 @@ const Main: FC = (props) => {
             { tag.name }
         </div>
     ));
-
     return (
         <main className={styles.main}>
             <div className={styles.categoryWrapper}>
@@ -41,31 +41,7 @@ const Main: FC = (props) => {
             <div className={styles.cardsWrapper}>
                 <div className={styles.cards}>
                     {cardsArray.map(i => (
-                        <div className={styles.card} key={String(i)}>
-                            <div className={styles.cardSection}>
-                                <div className={styles.image}></div>
-                                <div className={`${styles.tagsBlock} ${styles.tags}`}>
-                                    { tags }
-                                </div>
-                                <div className={styles.text}>
-                                    Длинное название товара в одну строчку п ...
-                                </div>
-                                <div className={styles.minPrice}>
-                                    от 350 000 &#8381;
-                                </div>
-                                <div className={styles.discount}>
-                                    <div className={styles.oldPrice}>
-                                        450 000 &#8381;
-                                    </div>
-                                    <div className={styles.percent}>
-                                        -10%
-                                    </div>
-                                </div>
-                            </div>
-                            <button>
-                                Добавить в корзину
-                            </button>                            
-                        </div>
+                        <Card key={String(i)} tags={tags}/>
                     ))}
                 </div>
                 <div className={styles.moreBtn}>

@@ -78,13 +78,12 @@
                 width: 18.25em;
                 height: 7.625em;
 
-                .info {
+                .totalInfoRow {
                     display: flex;
-                    flex-direction: row;
                     justify-content: flex-start;
                     align-items: center;
-
-                    &:div:last-child {
+                    
+                    .text:last-child {
                         margin-left: auto;
                     }
                 }

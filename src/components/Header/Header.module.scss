@@ -3,6 +3,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1.25em 3em 0.75em 3.125em;
 
     .title {
@@ -34,8 +35,9 @@
 
     .authUser {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        flex-wrap: wrap;
 
         .inputSearch {
             display: flex;
@@ -71,46 +73,91 @@
             }
         }   
         
-        .cart {
-            width: 3.125em;
-            height: 3.125em;
-            border: 1px solid var(--primary-body);
-            border-radius: 50%;
-            background-color: #fff;
+        .carts {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            position: relative;
-            margin-right: 1.25em;
-    
-            .productsCount {
-                width: 1.9375em;
-                height: 1.9375em;
+
+            .cart {
+                width: 3.125em;
+                height: 3.125em;
+                border: 1px solid var(--primary-body);
                 border-radius: 50%;
                 background-color: #fff;
-                position: absolute;
-                right: -0.75em;
-                top: -0.3em;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+                margin-right: 1.25em;
+        
+                .productsCount {
+                    width: 1.9375em;
+                    height: 1.9375em;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    position: absolute;
+                    right: -0.75em;
+                    top: -0.3em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+            }
+            .cart:hover {
+                cursor: pointer;
             }
     
+            .avatar {
+                width: 3.125em;
+                height: 3.125em;
+                border-radius: 3.625em;
+                background-image: url('../../assets/Header/avatar.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .avatar:hover {
+                cursor: pointer;
+            }
         }
-        .cart:hover {
-            cursor: pointer;
-        }
+    }
 
-        .avatar {
-            width: 3.125em;
-            height: 3.125em;
-            border-radius: 3.625em;
-            background-image: url('../../assets/Header/avatar.png');
-            background-repeat: no-repeat;
-            background-position: center center;
+}
+
+@media (max-width: 1355px) {
+    .header {
+
+        .authUser {
+           
+           flex-wrap: wrap;
         }
-        .avatar:hover {
-            cursor: pointer;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        padding-left: 1em;
+        padding-right: 1em;        
+        .authUser {
+            .inputSearch {
+                width: 100%;
+                input{
+                    display: block; 
+                    width: 100%;
+                 }
+            }
+        }
+    }
+}
+@media (max-width: 390px) {
+    .header {
+        .authUser {
+            .inputSearch {
+                .searchButton {
+                    padding-left: 0.75em;
+                    padding-right: 0.75em;
+                }
+            }
         }
     }
 }

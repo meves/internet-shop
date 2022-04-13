@@ -17,7 +17,6 @@ const Sidebar: FC = (props) => {
                         Узать подробнее
                     </button>
                 </div>
-
             </div>
             {props.children}
         </div>

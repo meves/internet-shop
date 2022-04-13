@@ -1,12 +1,17 @@
 .sidebar {
     grid-area: sidebar;
-    padding: 1.3125em 1.5em 0 1em;
+    padding: 1.3125em 1.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     .freeGoods {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 1.3125em 1.25em 1.25em 0;
+        max-width: 19.4375em;
+        padding: 1.3125em 0 1.25em 1.25em;
         border: 1px solid var(--accent-pink);
         border-radius: 1.25em;
         background-color: var(--secondary-white);
@@ -26,7 +31,7 @@
             }
 
             .button {
-                width: 12.125em;
+                max-width: 12.125em;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
                 font-size: 1rem;
@@ -42,4 +47,50 @@
             }
         }
     }
+
+    .banners {
+        margin-top: 2.0625em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 19.4375em;
+            height: 10.5em;
+            border-radius: 1.25em;
+            
+            .text {
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.15;
+                text-align: center;
+                color: var(--secondary-white);
+                width: 8.336em;
+            }
+        }
+    
+        .banner:not(:first-child) {
+            margin-top: 1.25em;
+        }
+    
+        .banner:hover {
+            cursor: pointer;
+        }
+    }
 }
+
+/*@media (max-width: 874px) {
+    .sidebar {
+        
+        .freeGoods {
+        }
+        .banners {
+            
+            
+        }
+    }
+}*/

@@ -9,8 +9,8 @@ import CartOrder from './CartOrder';
 const cartOrdersArray: Array<boolean> = [true, false, false, false, false];
 
 const Cart: FC = (props) => {
-    const cartOrdersElements = cartOrdersArray.map((value: boolean) => (
-        <CartOrder>
+    const cartOrdersElements = cartOrdersArray.map((value: boolean, i: number) => (
+        <CartOrder key={String(i)}>
             {value && <Statistic/>}
         </CartOrder>
     ))

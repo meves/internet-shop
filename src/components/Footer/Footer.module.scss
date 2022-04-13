@@ -3,8 +3,10 @@
     padding: 2em 7.6875em 2.1875em 3.125em;
     background-color: var(--secondary-very-light-grey);
 
-    .otherInfo {
+    .topInfo {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         .title {
             font-family: 'Montserrat', sans-serif;
@@ -12,7 +14,7 @@
             font-size: 2.55rem;
             line-height: 1.2255;
             color: var(--primary-dark);
-            margin-right: 15.36765em;
+            margin-right: 0.75em;
         }
 
         .text {
@@ -25,6 +27,7 @@
 
         .socials {
             margin-right: 1.9375em;
+            margin-left: auto;
 
             .icons {
                 display: flex;
@@ -45,7 +48,7 @@
         }
 
         .mobiles {
-
+            
             .logos {
                 display: flex;
                 justify-content: flex-start;
@@ -78,6 +81,48 @@
 
         div:not(:last-child) {
             margin-right: 1.428571em;
+        }
+    }
+}
+
+@media (max-width: 874px) {
+    .footer {
+        padding-right: 3.125em;
+    }
+}
+@media (max-width: 695px) {
+    .footer {
+        .topInfo {
+            .title {
+                flex: 1 1 100%;
+                margin-right: auto;
+            }
+            .socials {
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 442px) {
+    .footer {
+        padding-right: 1.1em;
+        padding-left: 1.1em;
+    }
+}
+@media (max-width: 380px) {
+    .footer {
+        .legalInfo {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            div {
+                margin-bottom: 0.3em;
+            }
+            
+            div:last-child {
+                flex: 1 1 100%;
+                margin-left: auto;
+            }
         }
     }
 }

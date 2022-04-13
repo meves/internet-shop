@@ -9,7 +9,7 @@ import GooglePlay from '../../assets/Footer/AppStore.svg';
 const Footer: FC = (props) => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.otherInfo}>
+            <div className={styles.topInfo}>
                 <div className={styles.title}>
                     React
                 </div>
@@ -44,7 +44,7 @@ const Footer: FC = (props) => {
                 </div>
             </div>
             <div className={styles.legalInfo}>
-                <div>&copy; Sionic</div>
+                <div>&copy;nbsp:Sionic</div>
                 <div>Полтика конфиденциальности</div>
                 <div>Правовая информация</div>
             </div>

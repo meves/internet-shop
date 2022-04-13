@@ -1,5 +1,10 @@
 .banners {
     margin-top: 2.0625em;
+    padding-left: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     .banner {
         display: flex;

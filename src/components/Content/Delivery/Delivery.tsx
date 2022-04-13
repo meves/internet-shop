@@ -41,15 +41,15 @@ const Delivery: FC = (props) => {
                 </div>
                 <div className={styles.total}>
                     <div className={styles.totalInfo}>
-                        <div className={styles.info}>
+                        <div className={styles.totalInfoRow}>
                             <div className={styles.text}>Стоимость товаров</div>
                             <div className={`${styles.text} ${styles.bigText}`}>200 584&#8381;</div>
                         </div>
-                        <div className={styles.info}>
+                        <div className={styles.totalInfoRow}>
                             <div className={styles.text}>Стоимость доставки</div>
                             <div className={styles.text}>200&#8381;</div>
                         </div>
-                        <div className={styles.info}>
+                        <div className={styles.totalInfoRow}>
                             <div className={`${styles.text} ${styles.bigText}`}>Итого</div>
                             <div className={`${styles.text} ${styles.boldText}`}>200 784&#8381;</div>
                         </div>

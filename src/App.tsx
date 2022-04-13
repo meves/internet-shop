@@ -25,6 +25,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Banners/>}/>
             <Route path="cart" element={<Banners/>}/>  
+            <Route path="delivery" element={null}/>
+            <Route path="orders" element={null}/>
           </Routes>  
         </Sidebar>
         <Footer/>

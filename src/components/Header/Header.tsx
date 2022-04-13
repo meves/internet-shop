@@ -19,11 +19,13 @@ const Header: FC = (props) => {
                         <img src={Search} alt="search" />
                     </div>
                 </div>    
-                <div className={styles.cart}>
-                    <img src={Cart} alt="Cart" />
-                    <div className={styles.productsCount}>10+</div>
+                <div className={styles.carts}>
+                    <div className={styles.cart}>
+                        <img src={Cart} alt="Cart" />
+                        <div className={styles.productsCount}>10+</div>
+                    </div>
+                    <div className={styles.avatar}></div>                
                 </div>
-                <div className={styles.avatar}></div>                
             </div>
         </header>
     )

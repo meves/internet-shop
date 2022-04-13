@@ -1,16 +1,24 @@
 .app-container {
   max-width: 1366px;
-  margin: 0 auto;
-
-  
+  margin: 0 auto; 
 
   .app {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: minmax(13.375em, 3fr) minmax(20.4375em, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header sidebar"
                          "content sidebar"
                          "footer footer";
     grid-gap: 1px;
+  }
+
+  @media (max-width: 874px) {
+    .app {
+      grid-template-columns: minmax(20em, 1fr);
+      grid-template-areas: "header"
+                           "sidebar"
+                           "content"
+                           "footer";  
+    }
   }
 }

@@ -10,8 +10,7 @@ const Orders: FC = (props) => {
             </div>
             <div className={styles.cards}>
                 <OrderCard/>
-                <OrderCard/>
-                
+                <OrderCard/>                
             </div>
         </main>
     )
