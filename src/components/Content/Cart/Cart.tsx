@@ -34,7 +34,7 @@ const Cart: FC = (props) => {
                             Стоимость корзины
                         </div>
                         <div className={styles.price}>
-                            1 185 000 &#8381;
+                            1&nbsp;185&nbsp;000&nbsp;&#8381;
                         </div>
                     </div>
                     <button className={styles.checkoutBtn}>

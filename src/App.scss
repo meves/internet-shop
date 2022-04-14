@@ -12,7 +12,7 @@
     grid-gap: 1px;
   }
 
-  @media (max-width: 874px) {
+  @media (max-width: 1354px) {
     .app {
       grid-template-columns: minmax(20em, 1fr);
       grid-template-areas: "header"

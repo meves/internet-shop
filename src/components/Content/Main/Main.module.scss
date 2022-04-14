@@ -172,6 +172,28 @@
     }
 }
 
+@media(max-width: 1354px) {
+    .main {
+        width: 100%;
+        .cardsWrapper {
+            .cards {
+                grid-template-columns: repeat(4, minmax(17.375em, 1fr));
+            }
+        }
+    }
+}
+
+@media(max-width: 1223px) {
+    .main {
+        .cardsWrapper {
+            .cards {
+                grid-template-columns: repeat(auto-fill, minmax(17.375em, 1fr));
+            }
+        }
+    }
+}
+
+
 @media (max-width: 874px) {
     .main {
         .cardsWrapper {

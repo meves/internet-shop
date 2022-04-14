@@ -47,40 +47,15 @@
                 cursor: pointer;
             }
         }
-    }
+    }    
+}
 
-    .banners {
-        margin-top: 2.0625em;
-        display: flex;
-        flex-direction: column;
+@media (max-width: 1354px) {
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;      
         justify-content: flex-start;
-        align-items: center;
-
-        .banner {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 19.4375em;
-            height: 10.5em;
-            border-radius: 1.25em;
-
-            .text {
-                font-size: 1.25rem;
-                font-weight: 700;
-                line-height: 1.15;
-                text-align: center;
-                color: var(--secondary-white);
-                width: 8.336em;
-            }
-        }
-
-        .banner:not(:first-child) {
-            margin-top: 1.25em;
-        }
-
-        .banner:hover {
-            cursor: pointer;
-        }
+        align-items: flex-start;  
     }
 }
 

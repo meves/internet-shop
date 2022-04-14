@@ -14,9 +14,9 @@ const Banners: FC = (props) => {
         </div>
     ))
     return (
-        <div className={styles.banners}>
+        <>
             { banners }
-        </div>
+        </>
     )
 }
 

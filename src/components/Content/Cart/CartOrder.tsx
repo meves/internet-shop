@@ -24,10 +24,10 @@ const CartOrder: FC = (props) => {
             </div>
             <div className={styles.prices}>
                 <div className={styles.minPrice}>
-                    от 350 000 &#8381;
+                    от 350&nbsp;000&nbsp;&#8381;
                 </div>
                 <div className={styles.oldPrice}>
-                    450 000 &#8381;
+                    450&nbsp;000&nbsp;&#8381;
                 </div>
             </div>
             <img className={styles.delete} src={Delete} alt="delete item" />

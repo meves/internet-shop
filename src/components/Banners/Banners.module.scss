@@ -1,10 +1,10 @@
-.banners {
+/*.banners {
     margin-top: 2.0625em;
     padding-left: 1.25em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;*/
 
     .banner {
         display: flex;
@@ -24,11 +24,28 @@
         }
     }
 
-    .banner:not(:first-child) {
+    /*.banner:not(:first-child) {
+        margin-top: 1.25em;
+    }*/
+    .banner {
         margin-top: 1.25em;
     }
 
     .banner:hover {
         cursor: pointer;
+    }
+/*}*/
+
+@media(max-width: 1354px) {
+    .banner {
+       margin-left: 0.75em;
+       flex: 1 1 15.4375em;        
+    }
+}
+
+@media(max-width: 1127px) {
+    .banner {
+       flex-grow: 0;
+       flex-basis: 17.4375em;        
     }
 }
